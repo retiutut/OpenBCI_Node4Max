@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 631.0, 617.0, 640.0, 480.0 ],
+		"rect" : [ 1168.0, 468.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 413.5, 76.570740000000001, 176.0, 22.0 ],
+					"patching_rect" : [ 215.526123000000098, 92.570740000000001, 176.0, 22.0 ],
 					"text" : "script npm install @openbci/wifi"
 				}
 
@@ -56,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 394.526123000000098, 53.0, 195.0, 22.0 ],
+					"patching_rect" : [ 215.526123000000098, 58.570740000000001, 195.0, 22.0 ],
 					"text" : "script npm install @openbci/utilities"
 				}
 
@@ -68,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 603.526123000000098, 102.5, 63.0, 22.0 ],
+					"patching_rect" : [ 481.526123000000098, 92.570740000000001, 63.0, 22.0 ],
 					"text" : "script stop"
 				}
 
@@ -80,7 +80,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 359.276123000000098, 125.5, 104.0, 22.0 ],
+					"patching_rect" : [ 48.276123000000098, 78.5, 104.0, 22.0 ],
 					"text" : "script npm update"
 				}
 
@@ -92,7 +92,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.066254000000072, 82.070740000000114, 106.0, 22.0 ],
+					"patching_rect" : [ 48.066254000000072, 47.070740000000114, 106.0, 22.0 ],
 					"text" : "script npm version"
 				}
 
@@ -104,7 +104,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 231.0, 125.5, 98.0, 22.0 ],
+					"patching_rect" : [ 48.276123000000098, 111.5, 98.0, 22.0 ],
 					"text" : "script npm install"
 				}
 
@@ -116,7 +116,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.526123000000098, 102.5, 64.0, 22.0 ],
+					"patching_rect" : [ 485.526123000000098, 58.570740000000001, 64.0, 22.0 ],
 					"text" : "script start"
 				}
 
@@ -136,7 +136,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 39.0, 220.5, 400.0, 220.0 ],
+					"patching_rect" : [ 157.0, 218.5, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -148,7 +148,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 311.0, 180.5, 283.0, 22.0 ],
+					"patching_rect" : [ 157.0, 186.5, 283.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"autostart" : 0,
+						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
+						"watch" : 0
+					}
+,
 					"text" : "node.script OpenBCI-ganglion-wifi_direct-nodeJS.js"
 				}
 
@@ -212,20 +220,30 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "OpenBCI-ganglion-wifi_direct-nodeJS.js",
+				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "n4m.monitor.maxpat",
-				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
+				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "resize_n4m_monitor_patcher.js",
-				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
+				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fit_jweb_to_bounds.js",
-				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
+				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
