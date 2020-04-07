@@ -14,13 +14,13 @@
 const OpenBCIConsts = require('@openbci/utilities').constants;
 const OpenBCIWifi = require('@openbci/wifi');
 
-const deviceAddr = '10.0.1.14';
+const deviceAddr = '10.0.1.18';
 
 const wifi = new OpenBCIWifi({
   debug: false, // Pretty print bytes
   verbose: false, // Verbose output
   sendCounts: false,
-  latency: 16667,
+  latency: 17000,
   protocol: 'tcp', // or "udp"
   burst: true
 });
@@ -47,12 +47,12 @@ const sampleFunc = (sample) => {
 
           const dpSum = droppedPacketArray.reduce(sum, 0);
           const srSum = sampleRateArray.reduce(sum, 0);
-
+		/*
           console.log(`SR: ${counter}`);
           console.log(`Dropped ${droppedPackets} packets`);
           console.log(`Dropped packet average: ${dpSum / droppedPacketArray.length}`);
           console.log(`Sample rate average: ${srSum / sampleRateArray.length}`);
-
+		*/
           droppedPackets = 0;
           counter = 0;
         }, 1000);
@@ -63,12 +63,15 @@ const sampleFunc = (sample) => {
       if (packetDiff < 0) packetDiff += MAX_SAMPLE_NUMBER;
 
       if (packetDiff > 1) {
+	/*
         console.log(`dropped ${packetDiff} packets | cur sn: ${sample.sampleNumber} | last sn: ${lastSampleNumber}`);
-        droppedPackets += packetDiff;
+        */
+		droppedPackets += packetDiff;
       }
 
       lastSampleNumber = sample.sampleNumber;
-      // console.log(JSON.stringify(sample));
+		const output = JSON.stringify(sample.channelData).slice(1, -1).replace(/,/g, ' ');;
+      console.log(output);
     }
   } catch (err) {
     console.log(err);
