@@ -359,6 +359,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -518,28 +520,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "OpenBCI-ganglion-wifi_direct-nodeJS.js",
-				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/Projects/code",
+				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "n4m.monitor.maxpat",
-				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/Projects/patchers",
+				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "resize_n4m_monitor_patcher.js",
-				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/Projects/code",
+				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fit_jweb_to_bounds.js",
-				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/Projects/code",
+				"bootpath" : "~/Documents/My Max Patches/OpenBCI_NodeJS_Max-Ganglion/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
